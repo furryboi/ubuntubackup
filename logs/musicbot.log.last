@@ -1,0 +1,104 @@
+[14.305591583] 2020-08-02 11:03:04,165 - INFO - launcher: Starting sanity checks
+[14.752388000] 2020-08-02 11:03:04,165 - INFO - launcher: Checking for Python 3.5+
+[14.880418777] 2020-08-02 11:03:04,165 - INFO - launcher: Checking console encoding
+[14.975547791] 2020-08-02 11:03:04,166 - INFO - launcher: Ensuring we're in the right environment
+[2713.202714920] 2020-08-02 11:03:06,864 - INFO - launcher: Required checks passed.
+[2713.711261749] 2020-08-02 11:03:06,864 - INFO - launcher: Optional checks passed.
+[2713.835954666] 2020-08-02 11:03:06,864 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[2.9807314872741699] 2020-08-02 11:03:07,131 - WARNING - musicbot.config | In config.py::MainThread(139913069324096), line 121 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[2.9813916683197021] 2020-08-02 11:03:07,132 - INFO - musicbot.config | In config.py::MainThread(139913069324096), line 132 in run_checks: Using i18n: config/i18n/en.json
+[2.9830381870269775] 2020-08-02 11:03:07,134 - DEBUG - musicbot.bot | In bot.py::MainThread(139913069324096), line 226 in _setup_logging: Set logging level to INFO
+[2.9847586154937744] 2020-08-02 11:03:07,135 - DEBUG - musicbot.json | In json.py::MainThread(139913069324096), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[2.9893712997436523] 2020-08-02 11:03:07,140 - INFO - musicbot.bot | In bot.py::MainThread(139913069324096), line 91 in __init__: Starting MusicBot version_unknown
+[2.9896702766418457] 2020-08-02 11:03:07,140 - WARNING - musicbot.bot | In bot.py::MainThread(139913069324096), line 94 in __init__: Autoplaylist is empty, disabling.
+[5.7359406948089600] 2020-08-02 11:03:09,886 - DEBUG - musicbot.bot | In bot.py::MainThread(139913069324096), line 952 in on_ready: Connection established, ready to go.
+[5.7361423969268799] 2020-08-02 11:03:09,887 - DEBUG - musicbot.bot | In bot.py::MainThread(139913069324096), line 343 in _cache_app_info: Caching app info
+[5.7363283634185791] 2020-08-02 11:03:09,887 - ERROR - musicbot.bot | In bot.py::MainThread(139913069324096), line 940 in on_error: Exception in on_ready
+Traceback (most recent call last):
+  File "/home/ubuntu/musicbot/bot.py", line 903, in run
+    self.loop.run_until_complete(self.start(*self.config.auth))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 543, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 457, in connect
+    await self._connect()
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 421, in _connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.6/dist-packages/discord/gateway.py", line 469, in poll_event
+    await self.received_message(msg)
+  File "/usr/local/lib/python3.6/dist-packages/discord/gateway.py", line 423, in received_message
+    func(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/state.py", line 663, in parse_guild_create
+    guild = self._get_create_guild(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/state.py", line 638, in _get_create_guild
+    guild._from_data(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/guild.py", line 391, in _from_data
+    self._sync(guild)
+  File "/usr/local/lib/python3.6/dist-packages/discord/guild.py", line 420, in _sync
+    self._add_channel(VoiceChannel(guild=self, data=c, state=self._state))
+  File "/usr/local/lib/python3.6/dist-packages/discord/channel.py", line 504, in __init__
+    self._update(guild, data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/channel.py", line 535, in _update
+    self._fill_overwrites(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/abc.py", line 271, in _fill_overwrites
+    self._overwrites.append(_Overwrites(id=overridden_id, **overridden))
+TypeError: __new__() got an unexpected keyword argument 'deny_new'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 270, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/ubuntu/musicbot/bot.py", line 960, in on_ready
+    await self._on_ready_sanity_checks()
+  File "/home/ubuntu/musicbot/bot.py", line 160, in wrapper
+    await self._cache_app_info()
+  File "/home/ubuntu/musicbot/bot.py", line 344, in _cache_app_info
+    self.cached_app_info = await self.application_info()
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 1129, in application_info
+    data = await self.http.application_info()
+  File "/usr/local/lib/python3.6/dist-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.6/dist-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.6/dist-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+[13.741962433] launcher-ERROR: Error starting bot
+Traceback (most recent call last):
+  File "run.py", line 373, in main
+    m.run()
+  File "/home/ubuntu/musicbot/bot.py", line 903, in run
+    self.loop.run_until_complete(self.start(*self.config.auth))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 543, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 457, in connect
+    await self._connect()
+  File "/usr/local/lib/python3.6/dist-packages/discord/client.py", line 421, in _connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.6/dist-packages/discord/gateway.py", line 469, in poll_event
+    await self.received_message(msg)
+  File "/usr/local/lib/python3.6/dist-packages/discord/gateway.py", line 423, in received_message
+    func(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/state.py", line 663, in parse_guild_create
+    guild = self._get_create_guild(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/state.py", line 638, in _get_create_guild
+    guild._from_data(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/guild.py", line 391, in _from_data
+    self._sync(guild)
+  File "/usr/local/lib/python3.6/dist-packages/discord/guild.py", line 420, in _sync
+    self._add_channel(VoiceChannel(guild=self, data=c, state=self._state))
+  File "/usr/local/lib/python3.6/dist-packages/discord/channel.py", line 504, in __init__
+    self._update(guild, data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/channel.py", line 535, in _update
+    self._fill_overwrites(data)
+  File "/usr/local/lib/python3.6/dist-packages/discord/abc.py", line 271, in _fill_overwrites
+    self._overwrites.append(_Overwrites(id=overridden_id, **overridden))
+TypeError: __new__() got an unexpected keyword argument 'deny_new'
+[13.742783070] launcher-INFO: All done.
