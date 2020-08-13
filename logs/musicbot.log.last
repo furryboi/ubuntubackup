@@ -1,0 +1,92 @@
+[38.001298904] 2020-08-12 22:55:33,596 - INFO - launcher: Starting sanity checks
+[38.001298904] 2020-08-12 22:55:33,596 - INFO - launcher: Checking for Python 3.5+
+[38.001298904] 2020-08-12 22:55:33,596 - INFO - launcher: Checking console encoding
+[38.001298904] 2020-08-12 22:55:33,596 - INFO - launcher: Setting console encoding to UTF-8
+[39.001703262] 2020-08-12 22:55:33,597 - INFO - launcher: Ensuring we're in the right environment
+[40.997982025] 2020-08-12 22:55:33,599 - INFO - launcher: Adding local bins/ folder to path
+[665.025949478] 2020-08-12 22:55:34,223 - INFO - launcher: Required checks passed.
+[665.025949478] 2020-08-12 22:55:34,223 - INFO - launcher: Optional checks passed.
+[665.025949478] 2020-08-12 22:55:34,223 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[1.4801254272460938] 2020-08-12 22:55:35,038 - WARNING - musicbot.config | In config.py::MainThread(43936), line 121 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[1.4801254272460938] 2020-08-12 22:55:35,038 - INFO - musicbot.config | In config.py::MainThread(43936), line 132 in run_checks: Using i18n: config/i18n/en.json
+[1.4820244312286377] 2020-08-12 22:55:35,040 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 227 in _setup_logging: Set logging level to INFO
+[1.4830257892608643] 2020-08-12 22:55:35,041 - DEBUG - musicbot.json | In json.py::MainThread(43936), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[1.5180244445800781] 2020-08-12 22:55:35,076 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 92 in __init__: Starting MusicBot Alpha-1.1
+[1.5180244445800781] 2020-08-12 22:55:35,076 - WARNING - musicbot.bot | In bot.py::MainThread(43936), line 95 in __init__: Autoplaylist is empty, disabling.
+[4.6819868087768555] 2020-08-12 22:55:38,240 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 953 in on_ready: Connection established, ready to go.
+[4.6819868087768555] 2020-08-12 22:55:38,240 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 344 in _cache_app_info: Caching app info
+[4.8390722274780273] 2020-08-12 22:55:38,397 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 775 in _scheck_ensure_env: Ensuring data folders exist
+[4.8500564098358154] 2020-08-12 22:55:38,408 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 791 in _scheck_server_permissions: Checking server permissions
+[4.8500564098358154] 2020-08-12 22:55:38,408 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 795 in _scheck_autoplaylist: Auditing autoplaylist
+[4.8500564098358154] 2020-08-12 22:55:38,408 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 799 in _scheck_configs: Validating config
+[4.8510620594024658] 2020-08-12 22:55:38,409 - DEBUG - musicbot.config | In config.py::MainThread(43936), line 236 in async_validate: Validating options...
+[4.8511793613433838] 2020-08-12 22:55:38,409 - DEBUG - musicbot.bot | In bot.py::MainThread(43936), line 802 in _scheck_configs: Validating permissions config
+[4.8511793613433838] 2020-08-12 22:55:38,409 - DEBUG - musicbot.permissions | In permissions.py::MainThread(43936), line 94 in async_validate: Validating permissions...
+[4.8511793613433838] 2020-08-12 22:55:38,409 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 970 in on_ready: Connected: 731963550503010312/GoodDragon#3666
+[4.8520741462707520] 2020-08-12 22:55:38,410 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 978 in on_ready: Owner:     372099126583754753/H-Hamburbur#3134
+
+[4.8530719280242920] 2020-08-12 22:55:38,411 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 981 in on_ready: Guild List:
+[4.8530719280242920] 2020-08-12 22:55:38,411 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato6
+[4.8540532588958740] 2020-08-12 22:55:38,412 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8550653457641602] 2020-08-12 22:55:38,413 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - 🏔 Icerock 🏔
+[4.8550653457641602] 2020-08-12 22:55:38,413 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - That One Yiff Farm
+[4.8560519218444824] 2020-08-12 22:55:38,414 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8570759296417236] 2020-08-12 22:55:38,415 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s2
+[4.8570759296417236] 2020-08-12 22:55:38,415 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato4
+[4.8580560684204102] 2020-08-12 22:55:38,416 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato7
+[4.8590552806854248] 2020-08-12 22:55:38,417 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato2
+[4.8590552806854248] 2020-08-12 22:55:38,417 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8600625991821289] 2020-08-12 22:55:38,418 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato17
+[4.8600625991821289] 2020-08-12 22:55:38,418 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s3
+[4.8611760139465332] 2020-08-12 22:55:38,419 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato11
+[4.8611760139465332] 2020-08-12 22:55:38,419 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato5
+[4.8630540370941162] 2020-08-12 22:55:38,421 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - ❤Bunch of Furs❤
+[4.8630540370941162] 2020-08-12 22:55:38,421 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8640544414520264] 2020-08-12 22:55:38,422 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato3
+[4.8650577068328857] 2020-08-12 22:55:38,423 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato10
+[4.8650577068328857] 2020-08-12 22:55:38,423 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s5
+[4.8660576343536377] 2020-08-12 22:55:38,424 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s8
+[4.8670556545257568] 2020-08-12 22:55:38,425 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8700602054595947] 2020-08-12 22:55:38,428 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8711740970611572] 2020-08-12 22:55:38,429 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Bottest
+[4.8720564842224121] 2020-08-12 22:55:38,430 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Vibes
+[4.8730545043945312] 2020-08-12 22:55:38,431 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - franko's server
+[4.8740525245666504] 2020-08-12 22:55:38,432 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Enjoy
+[4.8750560283660889] 2020-08-12 22:55:38,433 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato16
+[4.8760552406311035] 2020-08-12 22:55:38,434 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s1
+[4.8780665397644043] 2020-08-12 22:55:38,436 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8790667057037354] 2020-08-12 22:55:38,437 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Bunch of Furs
+[4.8800587654113770] 2020-08-12 22:55:38,438 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato12
+[4.8800587654113770] 2020-08-12 22:55:38,438 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato10
+[4.8811476230621338] 2020-08-12 22:55:38,439 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - TheNoobClan - Old Server
+[4.8840591907501221] 2020-08-12 22:55:38,442 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8850586414337158] 2020-08-12 22:55:38,443 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s6
+[4.8860592842102051] 2020-08-12 22:55:38,444 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s4
+[4.8870539665222168] 2020-08-12 22:55:38,445 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato13
+[4.8880538940429688] 2020-08-12 22:55:38,446 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato18
+[4.8880538940429688] 2020-08-12 22:55:38,446 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s7
+[4.8893535137176514] 2020-08-12 22:55:38,447 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Weeb academia
+[4.8903360366821289] 2020-08-12 22:55:38,448 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato19
+[4.8923506736755371] 2020-08-12 22:55:38,450 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato15
+[4.8933386802673340] 2020-08-12 22:55:38,451 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8943433761596680] 2020-08-12 22:55:38,452 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - TheNoobClan - Official Server
+[4.8953404426574707] 2020-08-12 22:55:38,453 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Gamergirl_2009's server
+[4.8963718414306641] 2020-08-12 22:55:38,454 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato14
+[4.8973364830017090] 2020-08-12 22:55:38,455 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato5
+[4.8973364830017090] 2020-08-12 22:55:38,455 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato1
+[4.9005172252655029] 2020-08-12 22:55:38,458 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - IDk
+[4.9013516902923584] 2020-08-12 22:55:38,459 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - Dafrans Disciples
+[4.9023509025573730] 2020-08-12 22:55:38,460 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - the weird discord server
+[4.9033393859863281] 2020-08-12 22:55:38,461 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - We Have Pizzas
+[4.9033393859863281] 2020-08-12 22:55:38,461 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - The mickey mouse VRchat fanclub
+[4.9043378829956055] 2020-08-12 22:55:38,462 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - potato20
+[4.9043378829956055] 2020-08-12 22:55:38,462 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - 🌸𝒥𝒶𝓀𝑒'𝓈 𝑀𝑒𝒶𝒹𝑜𝓌🌸
+[4.9053368568420410] 2020-08-12 22:55:38,463 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s9
+[4.9053368568420410] 2020-08-12 22:55:38,463 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 985 in on_ready:  - s10
+[4.9073469638824463] 2020-08-12 22:55:38,465 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 1041 in on_ready: Not bound to any text channels
+[4.9073469638824463] 2020-08-12 22:55:38,465 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 1067 in on_ready: Not autojoining any voice channels
+[5.7473788261413574] 2020-08-12 22:55:39,305 - INFO - musicbot.bot | In bot.py::MainThread(43936), line 2708 in on_message: 372099126583754753/H-Hamburbur#3134: .soup <@!731963550503010312>
+[5.7493767738342285] 2020-08-12 22:55:39,307 - WARNING - musicbot.json | In json.py::MainThread(43936), line 27 in get: Could not grab data from i18n key .
